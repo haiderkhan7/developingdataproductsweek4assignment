@@ -1,0 +1,34 @@
+---
+title: "Developing Data Products - Assignment Week 4"
+author: "Haider Khan"
+date: "10/23/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Reproducible Pitch
+
+- *https://github.com/haiderkhan7/developingdataproductsweek4assignment*
+- Find all the data that have been used for this presentation in the link above for the first part of the Developing Data Product Week 4 Assignment : First, you will create a Shiny application and deploy it on Rstudio's servers.Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+
+## mtcars Dataset
+
+### Motor Trend Car Road Tests
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+### Source
+Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391-411.
+
+```{r}
+library(datasets)
+head(mtcars, 3)
+```
+
+## mtcars Dataset - Webapp
+
+This app lets you monitor the mpg for the MTCARS dataset for different variables which can be selected. Also, you can see the regression model for the selected variable against the mpg. You can also get information about the app and other information by hovering over the tabs and can also get the github repository link where there is the code for the ui.R and server.R files. The app is interactive and can also show you the outliers if you want to see them by just clicking on a dialog box.
